@@ -1,22 +1,10 @@
-This is the reference code for [CryptoNote](https://cryptonote.org) cryptocurrency protocol.
-
-* Launch your own CryptoNote currency: [CryptoNote Starter](https://cryptonotestarter.org/)
-* CryptoNote reference implementation: [CryptoNoteCoin](https://cryptonote-coin.org)
-* Discussion board and support: [CryptoNote Forum](https://forum.cryptonote.org)
-
-## CryptoNote forking how-to
-
-### Preparation
-
 1. Create an account on [GitHub.com](github.com)
 2. Fork [CryptoNote repository](https://github.com/cryptonotefoundation/cryptonote)
 3. Buy one or two Ubuntu-based dedicated servers (at least 2Gb of RAM) for seed nodes.
 
+First step. Give a name to your coin
 
-
-### First step. Give a name to your coin
-
-**Good name must be unique.** Check uniqueness with [google](http://google.com) and [Map of Coins](mapofcoins.com) or any other similar service.
+Good name must be unique. Check uniqueness with [google](http://google.com) and [Map of Coins](mapofcoins.com) or any other similar service.
 
 Name must be specified twice:
 
@@ -91,8 +79,7 @@ This function has two parts:
 Only the first part of this function is directly related to the emission logic. You can change it the way you want. See MonetaVerde and DuckNote as the examples where this function is modified.
 
 
-### Third step. Networking
-
+ Third step. Networking
 **1. Default ports for P2P and RPC networking** (src/CryptoNoteConfig.h)
 
 P2P port is used by daemons to talk to each other through P2P protocol.
@@ -132,7 +119,7 @@ const std::initializer_list<const char*> SEED_NODES = {
 ```
 
 
-### Fourth step. Transaction fee and related parameters
+Fourth step. Transaction fee and related parameters
 
 **1. Minimum transaction fee** (src/CryptoNoteConfig.h)
 
@@ -154,7 +141,7 @@ const size_t CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE = 20000;
 ```
 
 
-### Fifth step. Address prefix
+Fifth step. Address prefix
 
 You may choose a letter (in some cases several letters) all the coin's public addresses will start with. It is defined by `CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX` constant. Since the rules for address prefixes are nontrivial you may use the [prefix generator tool](https://cryptonotestarter.org/tools.html).
 
