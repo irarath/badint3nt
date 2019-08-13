@@ -164,7 +164,7 @@ const uint64_t CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX = 0xe9; // addresses star
 ```
 
 
-### Sixth step. Genesis block
+### Sixth step. Genesis block <- ((YOU ARE HERE))
 
 **1. Build the binaries with blank genesis tx hex** (src/CryptoNoteConfig.h)
 
